@@ -1,12 +1,14 @@
-import os
+#import os
+#os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import easyocr
 import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 
-# IMAGE_PATH = 'sign.png'
-#IMAGE_PATH = 'surf.jpeg'
-IMAGE_PATH = cv2.imread('surf.jpeg')
+#IMAGE_PATH = open('sign.png', 'rb')
+#source = IMAGE_PATH.read()
+
+IMAGE_PATH = 'surf.jpeg'
 
 reader = easyocr.Reader(['en'], gpu=False)
 result = reader.readtext(IMAGE_PATH, detail=1)
