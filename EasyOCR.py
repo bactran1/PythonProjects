@@ -4,8 +4,10 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 
-IMAGE_PATH = 'sign.png'
-#IMAGE_PATH = 'surf.jpeg'
+#IMAGE_PATH = 'sign.png'
+IMAGE_PATH = 'surf.jpeg'
+
+
 
 reader = easyocr.Reader(['en'])
 result = reader.readtext(IMAGE_PATH)
