@@ -18,12 +18,19 @@ cap.set(4, height)
 
 reader = easyocr.Reader(['en'])
 
+#Problem: when rotation_info is not None, result at 0 degree will be disregard. Try adding 3 more Readers
 while True:
     success, imgOriginal = cap.read()
     img = np.asarray(imgOriginal)
     img = cv2.resize(img, (width, height))
 
-    result = reader.readtext(img, text_threshold=0.9, detail=1, batch_size=32)
+    result = reader.readtext(img,
+                             text_threshold=0.7,
+                             rotation_info=None,
+                             low_text=0.3,
+                             link_threshold=0.5,
+                             detail=1,
+                             batch_size=32)
 
     print(result, len(result))
 
@@ -31,28 +38,25 @@ while True:
 
     font = cv2.FONT_HERSHEY_SIMPLEX
 
+    spacer = 100
+
     if numObjectDetected == 0:
-        img = cv2.putText(img, "No object detected!", (25,50), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
+        img = cv2.putText(img, "No object detected!", (25, 50), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
     elif numObjectDetected >= 0:
         text = " "
 
-        # for i1 in range(numObjectDetected):
-        #     if result[i1][2] < 0.75:
-        #         result[i1] = [((0,0),(0,0),(0,0),(0,0)),'',0.0]
-        #         print("Below threshold!")
-        #     else:
-        #         print(result[i1][1], result[i1][2])
-
-
-
-    spacer = 100
-    for detection in result:
-        top_left = tuple([int(detection[0][0][0]), int(detection[0][0][1])])
-        bottom_right = tuple([int(detection[0][2][0]), int(detection[0][2][1])])
-        text = detection[1]
-        img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 5)
-        img = cv2.putText(img, text + ' ' + detection[2], top_left, font, 1, (0, 0, 255), 3, cv2.LINE_AA)
-        spacer += 10
+        for i1 in range(numObjectDetected):
+            if result[i1][2] < 0.8:
+                result[i1] = [((0, 0), (0, 0), (0, 0), (0, 0)), '', 0.0]
+                print("Below threshold!")
+            else:
+                for detection in result:
+                    top_left = tuple([int(detection[0][0][0]), int(detection[0][0][1])])
+                    bottom_right = tuple([int(detection[0][2][0]), int(detection[0][2][1])])
+                    text = detection[1] + ' ' + str(100 * round(detection[2], 3))
+                    img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 5)
+                    img = cv2.putText(img, text, top_left, font, 1, (0, 0, 255), 2, cv2.LINE_AA)
+                    spacer += 10
 
     cv2.imshow("Test Stream", img)
 
