@@ -1,41 +1,43 @@
 #import os
 #os.environ['KMP_DUPLICATE_LIB_OK']='True'
+import torch
 import easyocr
 import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 
-#IMAGE_PATH = open('sign.png', 'rb')
-#source = IMAGE_PATH.read()
 
-IMAGE_PATH = 'surf.jpeg'
+if torch.cuda.is_available():
+    print('Cuda is available!')
+else:
+    print('Cuda is not available!')
 
-reader = easyocr.Reader(['en'], gpu=False)
-result = reader.readtext(IMAGE_PATH, detail=1)
+
+#IMAGE_PATH = 'surf.jpeg'
+IMAGE_PATH = 'Optimized-Tax.png'
+
+reader = easyocr.Reader(['en'])
+result = reader.readtext(IMAGE_PATH, rotation_info=[90, 180, 270], detail=1)
 result
+print(len(result))
+print(result)
+for x in range(0,len(result)):
+    print(result[x][1])
+# print(result[0][1],result[1][1],result[2][1])
 
 
-# top_left = tuple(result[0][0][0])
-# bottom_right = tuple(result[0][0][2])
-# text = result[0][1]
-# font = cv2.FONT_HERSHEY_SIMPLEX
+text = result[0][1]
+font = cv2.FONT_HERSHEY_SIMPLEX
 
-# img = cv2.imread(IMAGE_PATH)
-# img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
-# img = cv2.putText(img, text, top_left, font, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
-# plt.imshow(img)
-# plt.show()
-#
-# img = cv2.imread(IMAGE_PATH)
-# spacer = 100
-# for detection in result:
-#     top_left = tuple(detection[0][0])
-#     bottom_right = tuple(detection[0][2])
-#     text = detection[1]
-#     img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 3)
-#     img = cv2.putText(img, text, (20, spacer), font, 0.5, (0, 255, 0), 2, cv2.LINE_AA)
-#     spacer += 15
-#
-# plt.imshow(img)
-# plt.show()
+img = cv2.imread(IMAGE_PATH)
+spacer = 100
+for detection in result:
+    top_left = tuple([int(detection[0][0][0]),int(detection[0][0][1])])
+    bottom_right = tuple([int(detection[0][2][0]),int(detection[0][2][1])])
+    text = detection[1]
+    img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 5)
+    img = cv2.putText(img, text, top_left, font, 2, (255, 0, 0), 3, cv2.LINE_AA)
+    spacer += 10
 
+plt.imshow(img)
+plt.show()
