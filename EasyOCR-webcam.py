@@ -1,4 +1,8 @@
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import torch
+import torchvision
+print(torchvision.__version__)
 import easyocr
 import cv2
 from matplotlib import pyplot as plt
@@ -6,11 +10,14 @@ import numpy as np
 
 if torch.cuda.is_available():
     print('Cuda is available!')
+    gpuName = torch.cuda.get_device_name(0)
+    gpuMem = str(round(torch.cuda.get_device_properties(0).total_memory/(1024*1024*1024),2))
+    print('Using '+ gpuName + ' with ' + gpuMem +' GB.')
 else:
     print('Cuda is not available!')
 
-width = 1280
-height = 720
+width = 720
+height = 480
 
 cap = cv2.VideoCapture(0)
 cap.set(3, width)
@@ -61,4 +68,17 @@ while True:
     cv2.imshow("Test Stream", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        print('.......')
+        print('......')
+        print('.....')
+        print('....')
+        print('...')
+        print('..')
+        print('.')
+        print('Exiting the program...')
+        print('...')
+        print('..')
+        print('.')
         break
+
+print('Program exited! - Bac')
