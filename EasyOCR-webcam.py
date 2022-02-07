@@ -2,7 +2,7 @@ import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import torch
 import torchvision
-print(torchvision.__version__)
+print('TorchVision+CUDA version: '+torchvision.__version__)
 import easyocr
 import cv2
 from matplotlib import pyplot as plt
