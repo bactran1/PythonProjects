@@ -8,8 +8,11 @@ import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 
+def colored(r, g, b, text):
+    return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, text)
+
 if torch.cuda.is_available():
-    print('Cuda is available!')
+    print(colored(255, 0, 0, 'Cuda is available!'))
     gpuName = torch.cuda.get_device_name(0)
     gpuMem = str(round(torch.cuda.get_device_properties(0).total_memory/(1024*1024*1024),2))
     print('Using '+ gpuName + ' with ' + gpuMem +' GB.')
@@ -22,14 +25,20 @@ height = 480
 cap = cv2.VideoCapture(0)
 cap.set(3, width)
 cap.set(4, height)
+print('Image capture device is assigned.')
 
 reader = easyocr.Reader(['en'])
 
 #Problem: when rotation_info is not None, result at 0 degree will be disregard. Try adding 3 more Readers
+print('..')
+print('Start processing image...')
+print('..')
 while True:
     success, imgOriginal = cap.read()
+    print(success)
     img = np.asarray(imgOriginal)
     img = cv2.resize(img, (width, height))
+    img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
     result = reader.readtext(img,
                              text_threshold=0.7,
@@ -68,14 +77,10 @@ while True:
     cv2.imshow("Test Stream", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        print('.......')
-        print('......')
-        print('.....')
-        print('....')
-        print('...')
-        print('..')
         print('.')
-        print('Exiting the program...')
+        print('..')
+        print('...')
+        print('...Exiting the program...')
         print('...')
         print('..')
         print('.')
