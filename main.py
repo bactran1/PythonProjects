@@ -6,9 +6,14 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
+from testGPU import isThereGPU
+
+isThereGPU()
 
 mnist = tf.keras.datasets.mnist
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
+
+
 
 #plt.imshow(x_train[0], cmap="gray") # Import the image
 #plt.show() # Plot the image
