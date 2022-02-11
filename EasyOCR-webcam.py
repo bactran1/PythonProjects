@@ -3,6 +3,7 @@ import easyocr
 import cv2
 from matplotlib import pyplot as plt
 import numpy as np
+import time
 
 if torch.cuda.is_available():
     print('Cuda is available!')
@@ -20,6 +21,8 @@ reader = easyocr.Reader(['en'])
 
 #Problem: when rotation_info is not None, result at 0 degree will be disregard. Try adding 3 more Readers
 while True:
+    start_time = time.time()    #Start time to calculate fps
+
     success, imgOriginal = cap.read()
     img = np.asarray(imgOriginal)
     img = cv2.resize(img, (width, height))
@@ -62,3 +65,5 @@ while True:
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
+    print(1.0/(time.time()-start_time))
