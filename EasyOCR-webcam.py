@@ -1,3 +1,6 @@
+import os
+
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import torch
 import easyocr
 import cv2
@@ -10,10 +13,11 @@ if torch.cuda.is_available():
 else:
     print('Cuda is not available!')
 
-width = 1280
-height = 720
+width = 640
+height = 480
 
-ipCamURL = 'rtsp://192.168.10.228:8554/live'
+# ipCamURL = 'rtsp://192.168.10.228:8554/live'
+ipCamURL = 'rtsp://admin:elmore@10.1.10.53:554/ch04/01'
 
 
 # Test if the camera is available
@@ -28,17 +32,20 @@ def testCam(source):
         return True
 
 
+source = ''
 if not testCam(0):
     if testCam(ipCamURL):
         print('Camera available!')
+        source = ipCamURL
     else:
         print('No camera available!')
         quit()
 else:
     print('Camera available!')
+    source = 0
 
 # cap = cv2.VideoCapture(0)
-cap = cv2.VideoCapture(ipCamURL)
+cap = cv2.VideoCapture(source)
 cap.set(3, width)
 cap.set(4, height)
 
@@ -69,6 +76,7 @@ while True:
     spacer = 100
     FPS = int(1 / (time.time() - startTime))
     if numObjectDetected == 0:
+        img = cv2.putText(img, f'FPS: {FPS}', (width - 125, 30), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
         img = cv2.putText(img, "No object detected!", (25, 50), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
     elif numObjectDetected >= 0:
         text = " "
@@ -84,7 +92,7 @@ while True:
                     text = detection[1] + ' ' + str(100 * round(detection[2], 3))
                     img = cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 5)
                     img = cv2.putText(img, text, top_left, font, 1, (0, 0, 255), 2, cv2.LINE_AA)
-                    img = cv2.putText(img, f'FPS: {FPS}', [width - 120, 30], font, 1, (0, 0, 255), 2, cv2.LINE_AA)
+                    img = cv2.putText(img, f'FPS: {FPS}', (width-125, 30), font, 1, (0, 0, 255), 2, cv2.LINE_AA)
                     spacer += 10
 
     cv2.imshow("Test Stream", img)
