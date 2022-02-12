@@ -8,7 +8,8 @@ width = 1280
 height = 720
 
 #cap = cv2.VideoCapture(ipCamURL)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(url)
+#cap = cv2.VideoCapture(0)
 
 cap.set(3, width)
 cap.set(4, height)
