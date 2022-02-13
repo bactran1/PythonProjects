@@ -59,8 +59,8 @@ while True:
 
         #cv2.drawContours(frame, contours, -1, (0,255,0),3)
 
-        frame = cv2.putText(frame, f'FPS: {FPS}', [width-130, 30], cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
-        #cv2.imshow('testIpCam', frame)
+        frame = cv2.putText(frame, f'FPS: {FPS}', [width-50, 30], cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
+        cv2.imshow('testIpCam', redFrame)
         cv2.imshow('Mask Red', frame)
 
 
