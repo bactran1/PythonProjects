@@ -1,8 +1,16 @@
 import cv2
 import time
+from djitellopy import Tello
 import numpy as np
 url = "rtsp://192.168.10.228:8554/live"
 ipCamURL = 'rtsp://admin:elmore@10.1.10.53:554/ch02/01'
+
+
+# tello = Tello()
+# tello.connect()
+#
+# tello.streamon()
+# frame_read = tello.get_frame_read()
 
 width = 1280
 height = 720
@@ -11,14 +19,16 @@ height = 720
 cap = cv2.VideoCapture(url)
 #cap = cv2.VideoCapture(0)
 
-cap.set(3, width)
-cap.set(4, height)
+#cap.set(3, width)
+#cap.set(4, height)
 
 while True:
     startTime = time.time()
     camera, frame = cap.read()
+    #frame = frame_read.frame
 
     FPS = int(1/(time.time()-startTime))
+    #FPS = 0
 
     if frame is not None:
 
