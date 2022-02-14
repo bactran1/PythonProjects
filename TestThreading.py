@@ -26,7 +26,7 @@ class WebcamStream:
         if self.cap.isOpened() is False:
             print("[Exiting]: Error accessing webcam stream.")
             exit(0)
-        fps_input_stream = int(self.cap.get(5))  # hardware fps
+        fps_input_stream = int(self.cap.get(cv2.CAP_PROP_FPS))  # hardware fps
         print(f"FPS of input stream: {fps_input_stream}")
 
         # reading a single frame from vcap stream for initializing
@@ -77,7 +77,7 @@ while True:
     else:
         start_time = time.time()
         frame = webcam_stream.read()
-        blurredFrame = cv2.GaussianBlur(frame, (5, 5), 0)
+        blurredFrame = cv2.GaussianBlur(frame, (7, 7), 0)
         hsvFrame = cv2.cvtColor(blurredFrame, cv2.COLOR_BGR2HSV)
         red_mask1 = cv2.inRange(hsvFrame, lowRed_HSV1, highRed_HSV1)
         red_mask2 = cv2.inRange(hsvFrame, lowRed_HSV2, highRed_HSV2)
@@ -91,7 +91,7 @@ while True:
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         FPS = int(1.0 / (time.time() - start_time))
         frame = cv2.putText(frame, f'FPS: {FPS}', [width - 120, 30], cv2.FONT_HERSHEY_SIMPLEX, 1,
-                                 (0, 0, 255), 2, cv2.LINE_AA)
+                            (0, 0, 255), 2, cv2.LINE_AA)
     # adding a delay for simulating video processing time
     delay = 0.03  # delay value in seconds
 
