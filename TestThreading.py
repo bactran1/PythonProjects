@@ -1,6 +1,8 @@
 from threading import Thread
-import cv2, time
+
+import cv2
 import numpy as np
+import time
 
 # Frame Size
 width = 1280
@@ -26,8 +28,8 @@ class WebcamStream:
         if self.cap.isOpened() is False:
             print("[Exiting]: Error accessing webcam stream.")
             exit(0)
-        fps_input_stream = int(self.cap.get(cv2.CAP_PROP_FPS))  # hardware fps
-        print(f"FPS of input stream: {fps_input_stream}")
+        #fps_input_stream = int(self.cap.get(5))  # hardware fps
+        #print(f"FPS of input stream: {fps_input_stream}")
 
         # reading a single frame from vcap stream for initializing
         self.grabbed, self.frame = self.cap.read()
