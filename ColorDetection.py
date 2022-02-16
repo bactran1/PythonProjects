@@ -69,7 +69,30 @@ class WebcamStream:
 
 
 # initializing and starting multi-threaded webcam input stream
-webcam_stream = WebcamStream(stream_id='rtsp://192.168.10.228:8554/live')  # 0 id for main camera
+
+while True:
+    try:
+        srcInput = input('Enter the camera index or url: ')
+        if type(srcInput) == str:
+            print('User entered an input.')
+        else:
+            raise Exception
+    except Exception as e:
+        print(e)
+        continue
+    except ValueError as e:
+        print(e)
+        print('Not accepted. Please try again!')
+        continue
+    else:
+        src = srcInput
+        print(f'Source = {src}')
+        break
+
+#webcam = 'rtsp://192.168.10.228:8554/live'
+
+
+webcam_stream = WebcamStream(stream_id=src)  # 0 id for main camera
 webcam_stream.start()
 # processing frames in input stream
 
