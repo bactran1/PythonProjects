@@ -16,8 +16,8 @@ else:
 width = 640
 height = 480
 
-# ipCamURL = 'rtsp://192.168.10.228:8554/live'
-ipCamURL = 'rtsp://admin:elmore@10.1.10.53:554/ch04/01'
+ipCamURL = 'rtsp://192.168.10.228:8554/live'
+#ipCamURL = 'rtsp://admin:elmore@10.1.10.53:554/ch04/01'
 
 
 # Test if the camera is available
