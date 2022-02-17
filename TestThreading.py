@@ -69,7 +69,7 @@ class WebcamStream:
 
 
 # initializing and starting multi-threaded webcam input stream
-webcam_stream = WebcamStream(stream_id='rtsp://192.168.10.228:8554/live')  # 0 id for main camera
+webcam_stream = WebcamStream(stream_id=0)  # 0 id for main camera
 webcam_stream.start()
 # processing frames in input stream
 
@@ -88,7 +88,7 @@ while True:
         red_mask = red_mask1 | red_mask2
         contours, hierarchy = cv2.findContours(red_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
         for contour in contours:
-            if cv2.contourArea(contour) > 1000:
+            if cv2.contourArea(contour) > 5000:
                 x, y, w, h = cv2.boundingRect(contour)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         FPS = int(1.0 / (time.time() - start_time))
