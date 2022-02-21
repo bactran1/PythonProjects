@@ -1,4 +1,14 @@
 import tensorflow as tf
+
+def isThereGPU():
+    print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+    print("Num CPUs Available: ", len(tf.config.list_physical_devices('CPU')))
+
+isThereGPU()
+
+
+import tensorflow as tf
+import matplotlib.pyplot as plt
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
@@ -15,7 +25,16 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-model.summary()
-
 model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)
+
+print(x_train.shape, y_train.shape)
+
+# pick a sample to plot
+sample = 3
+image = x_train[sample]
+# plot the sample
+fig = plt.figure
+plt.imshow(image, cmap='gray')
+plt.show()
+print(y_train[sample])
