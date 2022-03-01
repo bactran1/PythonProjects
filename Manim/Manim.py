@@ -41,9 +41,13 @@ class myNN(Scene):
     def construct(self):
         # INPUT LAYER
         inputLayer_faux = []
+        inputLayer_faux2 = []
         for x in range(-5, 5):
             inputLayer_faux.append(Dot(point=np.array([-5.0, x / 6, 0.0]), radius=0.05, color=GREEN))
+            inputLayer_faux2.append(Dot(point=np.array([-5.0, x / 6, 0.0]), radius=0.05, color=GREEN))
         inputLayer_faux_group = VGroup(*inputLayer_faux)
+        inputLayer_faux_group2 = VGroup(*inputLayer_faux2)
+
 
         inputLayer = []
         for x in range(-5, 5):
@@ -55,6 +59,11 @@ class myNN(Scene):
         for x in range(-20, 20):
             hiddenLayer1_faux.append(Dot(point=np.array([-2.0, x / 6, 0.0]), radius=0.05))
         hiddenLayer1_faux_group = VGroup(*hiddenLayer1_faux)
+
+        hiddenLayer1_faux2 = []
+        for x in range(-20, 20):
+            hiddenLayer1_faux2.append(Dot(point=np.array([-2.0, x / 6, 0.0]), radius=0.05))
+        hiddenLayer1_faux_group2 = VGroup(*hiddenLayer1_faux2)
 
         hiddenLayer1 = []
         for x in range(-20, 20):
@@ -176,10 +185,10 @@ class myNN(Scene):
         # self.add(L_IN_HIDDEN1_Group)
 
         self.play(Transform(inputLayer_group, inputLayer_faux_group))
-        self.play(Transform(inputLayer_faux_group, L_IN_HIDDEN1_Group))
+        self.play(Transform(inputLayer_faux_group2, L_IN_HIDDEN1_Group), Transform(inputLayer_faux_group, hiddenLayer1_faux_group))
 
-        self.play(Transform(hiddenLayer1_group, hiddenLayer1_faux_group))
-        self.play(Transform(hiddenLayer1_faux_group, L_HIDDEN1_HIDDEN2_Group))
+        # self.play(Transform(hiddenLayer1_faux_group, L_IN_HIDDEN1_Group))
+        self.play(Transform(hiddenLayer1_faux_group2, L_HIDDEN1_HIDDEN2_Group))
 
         self.play(Transform(hiddenLayer2_group, hiddenLayer2_faux_group))
         self.play(Transform(hiddenLayer2_faux_group, L_HIDDEN2_HIDDEN3_Group))

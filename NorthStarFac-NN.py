@@ -1,5 +1,6 @@
 import keras.optimizers
 import tensorflow as tf
+import time
 
 print('Using Tensorflow version: ', tf.version.VERSION)
 
@@ -43,10 +44,10 @@ model = createModel()
 
 print(model.summary())
 
-
+start_time = time.time()
 model.fit(x_train, y_train, batch_size=64, epochs=20)
 model.evaluate(x_test, y_test)
-
+print(f'Time taken: {time.time()-start_time}')
 # print(x_train.shape, y_train.shape)
 
 # pick a sample to plot
