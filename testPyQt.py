@@ -39,6 +39,10 @@ class Worker1(QThread):
         lowRed_HSV2 = np.array([170, 100, 20])
         highRed_HSV2 = np.array([180, 255, 255])
         Capture = cv2.VideoCapture(0)
+        width = 1280
+        height = 720
+        Capture.set(3, width)
+        Capture.set(4, height)
         while self.ThreadActive:
             ret, frame = Capture.read()
             if ret:
@@ -57,7 +61,7 @@ class Worker1(QThread):
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 # FlippedImage = cv2.flip(Image, 1)
                 ConvertToQtFormat = QImage(frame.data, frame.shape[1], frame.shape[0], QImage.Format_RGB888)
-                Pic = ConvertToQtFormat.scaled(640, 480, Qt.KeepAspectRatio)
+                Pic = ConvertToQtFormat.scaled(width, height, Qt.KeepAspectRatio)
                 self.ImageUpdate.emit(Pic)
     def stop(self):
         self.ThreadActive = False
