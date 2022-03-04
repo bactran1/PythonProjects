@@ -1,0 +1,776 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icon/AI icons/png/001-machine-learning.png</file>
+    <file>icon/AI icons/png/002-learning.png</file>
+    <file>icon/AI icons/png/003-machine-learning-1.png</file>
+    <file>icon/AI icons/png/004-deep-learning.png</file>
+    <file>icon/AI icons/png/005-deep-learning-1.png</file>
+    <file>icon/AI icons/png/006-deep-learning-2.png</file>
+    <file>icon/AI icons/png/007-neural.png</file>
+    <file>icon/AI icons/png/008-diagram.png</file>
+    <file>icon/AI icons/png/009-ai.png</file>
+    <file>icon/AI icons/png/010-learning-1.png</file>
+    <file>icon/AI icons/png/011-machine-learning-2.png</file>
+    <file>icon/Icon Pack Vol. 1/SVG/ALIGN LEFT.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/ALIGN MIDDLE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/ALIGN RIGHT.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/ARROW.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/BATTERY.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/BELL.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/BLANK.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/BLUETOOTH.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/BROWSER.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CAMERA.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CART.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CHAT.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CHECK MARK.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CLOCK.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CLOSE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/COCKTAIL.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/COMPASS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CONNECTION.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/CURSOR.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/DISPLAY.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/DOWNLOAD.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/DROP.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/EMPTY BLANK.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/FLAG.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/FORWARD 2.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/FORWARD.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/GIFT.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/GRAPHIC.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/GRID.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/HAMBURGER MENU.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/HEADPHONES.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/HEART.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/HOME.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/HYPERLINK.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/JUSTIFY ALL.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/KEY.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/LABEL.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/LAUNCH.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/LOCK CLOSED.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/LOCK OPEN.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAGNET.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAGNIFYING GLASS 2.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAGNIFYING GLASS MINUS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAGNIFYING GLASS PLUS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAGNIFYING GLASS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAIL.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAP PIN.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAP.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MAXIMIZE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MICROPHONE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MINIMIZE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MINUS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MOUSE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/MUSIC.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/NAVIGATION.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/NOTIFICATIONS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/PAUSE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/PENCIL.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/PLAY.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/PLUS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/POWER.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/PRINT.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/REPEAT.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/RULE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SELECTION.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SETTINGS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SHARE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SHUFFLE.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SOUND MINUS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SOUND PLUS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SPEAKER.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/STAR.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/STATISTICS.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/STOP.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/SUN.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/TRASH BIN.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/UMBRELLA.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/UPLOAD.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/VIDEO CAMERA.svg</file>
+    <file>icon/Icon Pack Vol. 1/SVG/WIFI.svg</file>
+    <file>icon/linea_arrows_1.0/_PNG64/.DS_Store</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_anticlockwise.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_anticlockwise_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_button_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_button_off.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_button_on.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_button_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_check.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_check.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_downleft.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_downright.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_minus.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_plus.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_remove.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_upleft.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_circle_upright.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_clockwise.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_clockwise_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_compress.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_deny.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_diagonal.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_diagonal2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_down_double-34.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_downleft.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_downright.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_down_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_horiz.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_left_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_right_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_up_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_drag_vert.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_exclamation.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_expand.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_expand_diagonal1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_expand_horizontal1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_expand_vertical1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_fit_horizontal.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_fit_vertical.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_glide.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_glide_horizontal.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_glide_vertical.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_hamburger 2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_hamburger1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_horizontal.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_info.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_alt.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_cmd-29.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_delete.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_return.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_shift.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_tab.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_keyboard_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_left_double-32.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_minus.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_move.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_move_bottom.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_move_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_move_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_move_top.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_move2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_plus.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_question.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_remove.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_right_double-31.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_rotate.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_rotate_anti.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_rotate_anti_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_rotate_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink_diagonal1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink_diagonal2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink_horizonal2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink_horizontal1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink_vertical1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_shrink_vertical2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_sign_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_sign_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_sign_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_sign_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_down1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_down2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_left1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_left2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_right1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_right2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_up1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slide_up2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_down_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_left_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_right_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_slim_up_dashed.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_check.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_down.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_downleft.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_downright.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_left.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_minus.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_plus.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_remove.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_right.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_upleft.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_square_upright.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_squares.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_diagonal1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_diagonal2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_diagonal3.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_diagonal4.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_horizontal1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_horizontal2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_vertical1.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_stretch_vertical2.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_switch_horizontal.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_switch_vertical.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_up.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_up_double-33.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_upleft.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_upright.png</file>
+    <file>icon/linea_arrows_1.0/_PNG64/arrows_vertical.png</file>
+    <file>icon/linea_arrows_1.0/_SVG/.DS_Store</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_anticlockwise.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_anticlockwise_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_button_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_button_off.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_button_on.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_button_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_check.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_check.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_downleft.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_downright.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_minus.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_plus.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_remove.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_upleft.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_circle_upright.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_clockwise.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_clockwise_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_compress.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_deny.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_diagonal.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_diagonal2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_down_double-34.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_downleft.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_downright.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_down_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_horiz.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_left_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_right_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_up_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_drag_vert.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_exclamation.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_expand.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_expand_diagonal1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_expand_horizontal1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_expand_vertical1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_fit_horizontal.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_fit_vertical.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_glide.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_glide_horizontal.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_glide_vertical.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_hamburger 2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_hamburger1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_horizontal.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_info.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_alt.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_cmd-29.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_delete.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_down-28.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_return.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_shift.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_tab.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_keyboard_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_left_double-32.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_minus.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_move.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_move_bottom.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_move_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_move_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_move_top.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_move2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_plus.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_question.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_remove.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_right_double-31.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_rotate.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_rotate_anti.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_rotate_anti_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_rotate_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink_diagonal1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink_diagonal2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink_horizonal2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink_horizontal1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink_vertical1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_shrink_vertical2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_sign_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_sign_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_sign_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_sign_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_down1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_down2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_left1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_left2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_right1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_right2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_up1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slide_up2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_down_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_left_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_right_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_slim_up_dashed.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_check.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_down.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_downleft.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_downright.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_left.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_minus.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_plus.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_remove.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_right.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_upleft.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_square_upright.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_squares.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_diagonal1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_diagonal2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_diagonal3.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_diagonal4.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_horizontal1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_horizontal2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_vertical1.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_stretch_vertical2.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_switch_horizontal.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_switch_vertical.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_up.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_up_double.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_upright.svg</file>
+    <file>icon/linea_arrows_1.0/_SVG/arrows_vertical.svg</file>
+    <file>icon/linea_basic_1.0/_PNG 64/.DS_Store</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_accelerator.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_alarm.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_anchor.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_anticlockwise.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_archive.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_archive_full.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_ban.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_battery_charge.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_battery_empty.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_battery_full.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_battery_half.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_bolt.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_book.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_book_pen.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_book_pencil.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_bookmark.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_calculator.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_calendar.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_cards_diamonds.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_cards_hearts.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_case.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_chronometer.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_clessidre.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_clock.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_clockwise.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_cloud.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_clubs.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_compass.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_cup.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_diamonds.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_display.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_download.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_exclamation.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_eye.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_eye_closed.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_female.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_flag1.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_flag2.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_floppydisk.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_folder.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_folder_multiple.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_gear.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_geolocalize-01.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_geolocalize-05.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_globe.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_gunsight.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_hammer.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_headset.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_heart.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_heart_broken.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_helm.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_home.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_info.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_ipod.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_joypad.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_key.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_keyboard.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_laptop.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_life_buoy.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_lightbulb.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_link.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_lock.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_lock_open.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_magic_mouse.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_magnifier.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_magnifier_minus.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_magnifier_plus.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_mail.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_mail_multiple.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_mail_open.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_mail_open_text.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_male.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_map.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_message.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_message_multiple.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_message_txt.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_mixer2.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_mouse.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_notebook.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_notebook_pen.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_notebook_pencil.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_paperplane.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_pencil_ruler.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_pencil_ruler_pen .png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_photo.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_picture.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_picture_multiple.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_pin1.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_pin2.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_postcard.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_postcard_multiple.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_printer.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_question.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_rss.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_server.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_server_cloud.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_server_download.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_server_upload.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_server2.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_settings.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_share.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_sheet.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_sheet_multiple .png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_sheet_pen.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_sheet_pencil.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_sheet_txt .png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_signs.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_smartphone.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_spades.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_spread.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_spread_bookmark.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_spread_text.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_spread_text_bookmark.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_star.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_tablet.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_target.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_todo.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_todo_pen .png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_todo_pencil.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_todo_txt.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_todolist_pen.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_todolist_pencil.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_trashcan.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_trashcan_full.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_trashcan_refresh.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_trashcan_remove.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_upload.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_usb.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_video.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_watch.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_webpage.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_webpage_img_txt.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_webpage_multiple.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_webpage_txt.png</file>
+    <file>icon/linea_basic_1.0/_PNG 64/basic_world.png</file>
+    <file>icon/linea_basic_1.0/_SVG/.DS_Store</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_accelerator.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_alarm.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_anchor.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_anticlockwise.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_archive.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_archive_full.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_ban.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_battery_charge.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_battery_empty.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_battery_full.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_battery_half.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_bolt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_book.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_book_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_book_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_bookmark.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_calculator.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_calendar.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_cards_diamonds.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_cards_hearts.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_case.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_chronometer.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_clessidre.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_clock.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_clockwise.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_cloud.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_clubs.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_compass.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_cup.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_diamonds.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_display.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_download.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_exclamation.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_eye.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_eye_closed.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_female.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_flag1.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_flag2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_floppydisk.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_folder.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_folder_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_gear.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_geolocalize-01.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_geolocalize-05.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_globe.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_gunsight.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_hammer.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_headset.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_heart.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_heart_broken.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_helm.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_home.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_info.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_ipod.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_joypad.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_key.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_keyboard.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_laptop.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_life_buoy.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_lightbulb.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_link.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_lock.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_lock_open.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_magic_mouse.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_magnifier.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_magnifier_minus.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_magnifier_plus.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_mail.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_mail_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_mail_open.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_mail_open_text.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_male.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_map.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_message.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_message_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_message_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_mixer2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_mouse.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_notebook.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_notebook_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_notebook_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_paperplane.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_pencil_ruler.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_pencil_ruler_pen .svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_photo.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_picture.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_picture_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_pin1.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_pin2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_postcard.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_postcard_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_printer.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_question.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_rss.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_server.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_server_cloud.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_server_download.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_server_upload.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_server2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_settings.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_share.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_sheet.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_sheet_multiple .svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_sheet_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_sheet_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_sheet_txt .svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_signs.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_smartphone.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_spades.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_spread.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_spread_bookmark.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_spread_text.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_spread_text_bookmark.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_star.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_tablet.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_target.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_todo.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_todo_pen .svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_todo_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_todo_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_todolist_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_todolist_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_trashcan.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_trashcan_full.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_trashcan_refresh.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_trashcan_remove.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_upload.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_usb.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_video.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_watch.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_webpage.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_webpage_img_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_webpage_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_webpage_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG/basic_world.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/.DS_Store</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_accelerator.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_alarm.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_anchor.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_anticlockwise.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_archive.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_archive_full.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_ban.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_battery_charge.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_battery_empty.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_battery_full.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_battery_half.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_bolt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_book.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_book_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_book_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_bookmark.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_calculator.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_calendar.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_cards_diamonds.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_cards_hearts.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_case.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_chronometer.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_clessidre.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_clock.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_clockwise.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_cloud.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_clubs.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_compass.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_cup.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_diamonds.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_display.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_download.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_exclamation.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_eye.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_eye_closed.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_female.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_flag1.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_flag2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_floppydisk.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_folder.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_folder_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_gear.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_geolocalize-01.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_geolocalize-05.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_globe.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_gunsight.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_hammer.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_headset.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_heart.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_heart_broken.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_helm.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_home.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_info.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_ipod.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_joypad.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_key.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_keyboard.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_laptop.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_life_buoy.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_lightbulb.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_link.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_lock.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_lock_open.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_magic_mouse.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_magnifier.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_magnifier_minus.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_magnifier_plus.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_mail.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_mail_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_mail_open.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_mail_open_text.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_male.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_map.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_message.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_message_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_message_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_mixer2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_mouse.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_notebook.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_notebook_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_notebook_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_paperplane.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_pencil_ruler.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_pencil_ruler_pen .svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_photo.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_picture.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_picture_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_pin1.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_pin2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_postcard.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_postcard_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_printer.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_question.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_rss.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_server.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_server_cloud.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_server_download.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_server_upload.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_server2.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_settings.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_share.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_sheet.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_sheet_multiple .svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_sheet_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_sheet_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_sheet_txt .svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_signs.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_smartphone.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_spades.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_spread.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_spread_bookmark.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_spread_text.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_spread_text_bookmark.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_star.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_tablet.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_target.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_todo.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_todo_pen .svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_todo_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_todo_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_todolist_pen.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_todolist_pencil.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_trashcan.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_trashcan_full.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_trashcan_refresh.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_trashcan_remove.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_upload.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_usb.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_video.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_watch.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_webpage.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_webpage_img_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_webpage_multiple.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_webpage_txt.svg</file>
+    <file>icon/linea_basic_1.0/_SVG expanded/basic_world.svg</file>
+  </qresource>
+</RCC>
