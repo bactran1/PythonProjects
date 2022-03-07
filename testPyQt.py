@@ -5,6 +5,8 @@ from PyQt5.QtCore import *
 import cv2
 import numpy as np
 
+#this is just a test
+
 class MainWindow(QWidget):
     def __init__(self):
         super(MainWindow, self).__init__()
