@@ -212,11 +212,24 @@ class Ui_MainWindow(object):
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Body_frame.sizePolicy().hasHeightForWidth())
+
+
         self.Body_frame.setSizePolicy(sizePolicy)
         self.Body_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.Body_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Body_frame.setObjectName("Body_frame")
         self.verticalLayout.addWidget(self.Body_frame)
+        self.Worker1 = Worker1()
+        self.Worker1.start()
+        self.Worker1.ImageUpdate.connect(self.ImageUpdateSlot)
+        self.FeedLable = QLabel()
+        self.Body_frame.addWidget(self.FeedLable)
+
+
+        def ImageUpdateSlot(self, Image):
+            self.Feedlabel.setPixmap(QPixmap.fromImage(Image))
+
+
         self.Footer_frame = QtWidgets.QFrame(self.centralwidget)
         self.Footer_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.Footer_frame.setFrameShadow(QtWidgets.QFrame.Raised)
