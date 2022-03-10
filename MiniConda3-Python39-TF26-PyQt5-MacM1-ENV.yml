@@ -1,4 +1,4 @@
-name: MiniConda3-Python39-TF26-PyQt6-MacM1
+name: MiniConda3-Python39-TF26-PyQt5-MacM1
 channels:
   - apple
   - conda-forge
