@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1066</width>
-    <height>872</height>
+    <width>1171</width>
+    <height>863</height>
    </rect>
   </property>
   <property name="font">
@@ -106,7 +106,7 @@ background-color: #003153;
             </property>
             <property name="icon">
              <iconset resource="../PyQt5-Gui-Examples/icon.qrc">
-              <normaloff>:/icon/icon/linea_arrows_1.0/_SVG/arrows_hamburger 2.svg</normaloff>:/icon/icon/linea_arrows_1.0/_SVG/arrows_hamburger 2.svg</iconset>
+              <normaloff>:/icon/icon/Google Material Icons/baseline_menu_white_36dp.png</normaloff>:/icon/icon/Google Material Icons/baseline_menu_white_36dp.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -405,7 +405,7 @@ color:#ffffff;
             </property>
             <property name="icon">
              <iconset resource="../PyQt5-Gui-Examples/icon.qrc">
-              <normaloff>:/icon/icon/Icon Pack Vol. 1/SVG/MINUS.svg</normaloff>:/icon/icon/Icon Pack Vol. 1/SVG/MINUS.svg</iconset>
+              <normaloff>:/icon/icon/Google Material Icons/baseline_minimize_white_24dp.png</normaloff>:/icon/icon/Google Material Icons/baseline_minimize_white_24dp.png</iconset>
             </property>
            </widget>
           </item>
@@ -416,7 +416,7 @@ color:#ffffff;
             </property>
             <property name="icon">
              <iconset resource="../PyQt5-Gui-Examples/icon.qrc">
-              <normaloff>:/icon/icon/Icon Pack Vol. 1/SVG/MINIMIZE.svg</normaloff>:/icon/icon/Icon Pack Vol. 1/SVG/MINIMIZE.svg</iconset>
+              <normaloff>:/icon/icon/Google Material Icons/baseline_web_asset_white_24dp.png</normaloff>:/icon/icon/Google Material Icons/baseline_web_asset_white_24dp.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -433,7 +433,7 @@ color:#ffffff;
             </property>
             <property name="icon">
              <iconset resource="../PyQt5-Gui-Examples/icon.qrc">
-              <normaloff>:/icon/icon/Icon Pack Vol. 1/SVG/CLOSE.svg</normaloff>:/icon/icon/Icon Pack Vol. 1/SVG/CLOSE.svg</iconset>
+              <normaloff>:/icon/icon/Google Material Icons/baseline_close_white_24dp.png</normaloff>:/icon/icon/Google Material Icons/baseline_close_white_24dp.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -557,6 +557,7 @@ color:#ffffff;
  </widget>
  <resources>
   <include location="../PyQt5-Gui-Examples/icon.qrc"/>
+  <include location="../../../.designer/PyQt5-Gui-Examples/icon.qrc"/>
  </resources>
  <connections/>
 </ui>

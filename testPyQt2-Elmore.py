@@ -9,12 +9,17 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+import cv2
+import numpy as np
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1066, 872)
+        MainWindow.resize(1280, 720)
         font = QtGui.QFont()
         font.setFamily("Arial Rounded MT Bold")
         MainWindow.setFont(font)
@@ -25,8 +30,8 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setToolTipDuration(-8)
         self.centralwidget.setStyleSheet("*{\n"
-"background-color: #003153;\n"
-"}")
+                                         "background-color: #003153;\n"
+                                         "}")
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setContentsMargins(3, 3, 3, 3)
@@ -53,16 +58,17 @@ class Ui_MainWindow(object):
         font.setPointSize(14)
         self.pushButton_2.setFont(font)
         self.pushButton_2.setStyleSheet("QPushButton\n"
-"{\n"
-"    border:none;\n"
-"    color:#ffffff; \n"
-"}")
+                                        "{\n"
+                                        "    border:none;\n"
+                                        "    color:#ffffff; \n"
+                                        "}")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/icon/icon/linea_arrows_1.0/_SVG/arrows_hamburger 2.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(":/icon/icon/linea_arrows_1.0/_SVG/arrows_hamburger 2.svg"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.pushButton_2.setIcon(icon1)
         self.pushButton_2.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout_4.addWidget(self.pushButton_2, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.horizontalLayout_4.addWidget(self.pushButton_2, 0, QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop)
         self.horizontalLayout.addWidget(self.header_left, 0, QtCore.Qt.AlignTop)
         self.header_middle = QtWidgets.QFrame(self.Header_frame)
         palette = QtGui.QPalette()
@@ -131,9 +137,9 @@ class Ui_MainWindow(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.PlaceholderText, brush)
         self.header_middle.setPalette(palette)
         self.header_middle.setStyleSheet("*{\n"
-"color:#ffffff;\n"
-"}\n"
-"")
+                                         "color:#ffffff;\n"
+                                         "}\n"
+                                         "")
         self.header_middle.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.header_middle.setFrameShadow(QtWidgets.QFrame.Raised)
         self.header_middle.setObjectName("header_middle")
@@ -156,18 +162,18 @@ class Ui_MainWindow(object):
         font.setPointSize(14)
         self.App_Name.setFont(font)
         self.App_Name.setStyleSheet("*{\n"
-"color:#ffffff;\n"
-"}\n"
-"")
+                                    "color:#ffffff;\n"
+                                    "}\n"
+                                    "")
         self.App_Name.setScaledContents(False)
         self.App_Name.setObjectName("App_Name")
-        self.horizontalLayout_3.addWidget(self.App_Name, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        self.horizontalLayout_3.addWidget(self.App_Name, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop)
         self.horizontalLayout.addWidget(self.header_middle)
         self.header_right = QtWidgets.QFrame(self.Header_frame)
         self.header_right.setStyleSheet("*{\n"
-"    border:none;\n"
-"    color:#ffffff;\n"
-"}")
+                                        "    border:none;\n"
+                                        "    color:#ffffff;\n"
+                                        "}")
         self.header_right.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.header_right.setFrameShadow(QtWidgets.QFrame.Raised)
         self.header_right.setObjectName("header_right")
@@ -176,14 +182,16 @@ class Ui_MainWindow(object):
         self.MinimizeBtn = QtWidgets.QPushButton(self.header_right)
         self.MinimizeBtn.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/icon/icon/Icon Pack Vol. 1/SVG/MINUS.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(":/icon/icon/Icon Pack Vol. 1/SVG/MINUS.svg"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.MinimizeBtn.setIcon(icon2)
         self.MinimizeBtn.setObjectName("MinimizeBtn")
         self.horizontalLayout_2.addWidget(self.MinimizeBtn)
         self.RestoreWindowBtn = QtWidgets.QPushButton(self.header_right)
         self.RestoreWindowBtn.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/icon/icon/Icon Pack Vol. 1/SVG/MINIMIZE.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap(":/icon/icon/Icon Pack Vol. 1/SVG/MINIMIZE.svg"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.RestoreWindowBtn.setIcon(icon3)
         self.RestoreWindowBtn.setIconSize(QtCore.QSize(32, 20))
         self.RestoreWindowBtn.setObjectName("RestoreWindowBtn")
@@ -191,12 +199,13 @@ class Ui_MainWindow(object):
         self.CloseBtn = QtWidgets.QPushButton(self.header_right)
         self.CloseBtn.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/icon/icon/Icon Pack Vol. 1/SVG/CLOSE.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap(":/icon/icon/Icon Pack Vol. 1/SVG/CLOSE.svg"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.CloseBtn.setIcon(icon4)
         self.CloseBtn.setIconSize(QtCore.QSize(32, 20))
         self.CloseBtn.setObjectName("CloseBtn")
         self.horizontalLayout_2.addWidget(self.CloseBtn)
-        self.horizontalLayout.addWidget(self.header_right, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignTop)
+        self.horizontalLayout.addWidget(self.header_right, 0, QtCore.Qt.AlignRight | QtCore.Qt.AlignTop)
         self.verticalLayout.addWidget(self.Header_frame, 0, QtCore.Qt.AlignTop)
         self.Body_frame = QtWidgets.QFrame(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
@@ -216,9 +225,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
         self.Footer_version = QtWidgets.QFrame(self.Footer_frame)
         self.Footer_version.setStyleSheet("*{\n"
-"color:#ffffff;\n"
-"}\n"
-"")
+                                          "color:#ffffff;\n"
+                                          "}\n"
+                                          "")
         self.Footer_version.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.Footer_version.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Footer_version.setObjectName("Footer_version")
@@ -250,7 +259,7 @@ class Ui_MainWindow(object):
         self.Version_2.setPixmap(QtGui.QPixmap(":/icon/icon/linea_arrows_1.0/_SVG/arrows_question.svg"))
         self.Version_2.setScaledContents(True)
         self.Version_2.setObjectName("Version_2")
-        self.horizontalLayout_6.addWidget(self.Version_2, 0, QtCore.Qt.AlignRight|QtCore.Qt.AlignBottom)
+        self.horizontalLayout_6.addWidget(self.Version_2, 0, QtCore.Qt.AlignRight | QtCore.Qt.AlignBottom)
         self.horizontalLayout_7.addWidget(self.Footer_help)
         self.verticalLayout.addWidget(self.Footer_frame)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -265,13 +274,53 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_2.setText(_translate("MainWindow", "Menu"))
-        self.App_Name.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Highliner Machine Learning Test</span></p></body></html>"))
+        self.App_Name.setText(_translate("MainWindow",
+                                         "<html><head/><body><p><span style=\" color:#ffffff;\">Highliner Machine Learning Test</span></p></body></html>"))
         self.Version.setText(_translate("MainWindow", "Version 0.0.1 | Copyright Elmore Electric LLC."))
+
+
+class Worker1(QThread):
+    ImageUpdate = pyqtSignal(QImage)
+    def run(self):
+        self.ThreadActive = True
+        lowRed_HSV1 = np.array([0, 100, 20])
+        highRed_HSV1 = np.array([10, 255, 255])
+        lowRed_HSV2 = np.array([170, 100, 20])
+        highRed_HSV2 = np.array([180, 255, 255])
+        Capture = cv2.VideoCapture(0)
+        width = 1280
+        height = 720
+        Capture.set(3, width)
+        Capture.set(4, height)
+        while self.ThreadActive:
+            ret, frame = Capture.read()
+            if ret:
+                # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                blurredFrame = cv2.GaussianBlur(frame, (7, 7), 0)
+                hsvFrame = cv2.cvtColor(blurredFrame, cv2.COLOR_BGR2HSV)
+                red_mask1 = cv2.inRange(hsvFrame, lowRed_HSV1, highRed_HSV1)
+                red_mask2 = cv2.inRange(hsvFrame, lowRed_HSV2, highRed_HSV2)
+                red_mask = red_mask1 | red_mask2
+                redFrame = cv2.bitwise_and(frame, frame, mask=red_mask)
+                contours, hierarchy = cv2.findContours(red_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+                for contour in contours:
+                    if cv2.contourArea(contour) > 4000:
+                        x, y, w, h = cv2.boundingRect(contour)
+                        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                # FlippedImage = cv2.flip(Image, 1)
+                ConvertToQtFormat = QImage(frame.data, frame.shape[1], frame.shape[0], QImage.Format_RGB888)
+                Pic = ConvertToQtFormat.scaled(width, height, Qt.KeepAspectRatio)
+                self.ImageUpdate.emit(Pic)
+    def stop(self):
+        self.ThreadActive = False
+        self.quit()
 
 import icon_rc
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
