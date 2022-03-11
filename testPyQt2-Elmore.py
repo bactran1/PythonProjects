@@ -214,20 +214,21 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.Body_frame.sizePolicy().hasHeightForWidth())
 
 
-        self.Body_frame.setSizePolicy(sizePolicy)
-        self.Body_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.Body_frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.Body_frame.setObjectName("Body_frame")
-        self.verticalLayout.addWidget(self.Body_frame)
+        # self.Body_frame.setSizePolicy(sizePolicy)
+        # self.Body_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        # self.Body_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        # self.Body_frame.setObjectName("Body_frame")
+        # self.verticalLayout.addWidget(self.Body_frame)
+
+
+        self.FeedLable = QLabel()
+        self.verticalLayout.addWidget(self.FeedLable)
         self.Worker1 = Worker1()
         self.Worker1.start()
         self.Worker1.ImageUpdate.connect(self.ImageUpdateSlot)
-        self.FeedLable = QLabel()
-        self.Body_frame.addWidget(self.FeedLable)
 
 
-        def ImageUpdateSlot(self, Image):
-            self.Feedlabel.setPixmap(QPixmap.fromImage(Image))
+
 
 
         self.Footer_frame = QtWidgets.QFrame(self.centralwidget)
@@ -283,6 +284,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+    def ImageUpdateSlot(self, Image):
+        self.Feedlabel.setPixmap(QPixmap.fromImage(Image))
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -290,6 +294,7 @@ class Ui_MainWindow(object):
         self.App_Name.setText(_translate("MainWindow",
                                          "<html><head/><body><p><span style=\" color:#ffffff;\">Highliner Machine Learning Test</span></p></body></html>"))
         self.Version.setText(_translate("MainWindow", "Version 0.0.1 | Copyright Elmore Electric LLC."))
+
 
 
 class Worker1(QThread):

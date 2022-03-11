@@ -449,7 +449,7 @@ color:#ffffff;
       </layout>
      </widget>
     </item>
-    <item>
+    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
      <widget class="QFrame" name="Body_frame">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -557,7 +557,7 @@ color:#ffffff;
  </widget>
  <resources>
   <include location="../PyQt5-Gui-Examples/icon.qrc"/>
-  <include location="../../../.designer/PyQt5-Gui-Examples/icon.qrc"/>
+  <include location="../PyQt5-Gui-Examples/icon.qrc"/>
  </resources>
  <connections/>
 </ui>
