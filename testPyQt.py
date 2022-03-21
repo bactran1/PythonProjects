@@ -9,6 +9,9 @@ import numpy as np
 
 #this is just a test
 
+#import Camera Iphone IP CAM URL
+ipCam = 'rtsp://Bacs-iPhone.local:8554/live'
+
 class MainWindow(QWidget):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -42,7 +45,8 @@ class Worker1(QThread):
         highRed_HSV1 = np.array([10, 255, 255])
         lowRed_HSV2 = np.array([170, 100, 20])
         highRed_HSV2 = np.array([180, 255, 255])
-        Capture = cv2.VideoCapture(0)
+        # Capture = cv2.VideoCapture(0)
+        Capture = cv2.VideoCapture(ipCam)
         width = 1280
         height = 720
         Capture.set(3, width)
@@ -51,6 +55,7 @@ class Worker1(QThread):
             ret, frame = Capture.read()
             if ret:
                 # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
                 blurredFrame = cv2.GaussianBlur(frame, (7, 7), 0)
                 hsvFrame = cv2.cvtColor(blurredFrame, cv2.COLOR_BGR2HSV)
                 red_mask1 = cv2.inRange(hsvFrame, lowRed_HSV1, highRed_HSV1)
