@@ -69,6 +69,7 @@ class WebcamStream:
 
 
 # initializing and starting multi-threaded webcam input stream
+# webcam_stream = WebcamStream(stream_id='rtsp://Bacs-iPhone.local:8554/live')  # 0 id for main camera
 webcam_stream = WebcamStream(stream_id=0)  # 0 id for main camera
 webcam_stream.start()
 # processing frames in input stream
