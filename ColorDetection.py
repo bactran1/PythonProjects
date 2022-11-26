@@ -5,8 +5,8 @@ import numpy as np
 import time
 
 # Frame Size
-width = 1280
-height = 720
+width = 1920
+height = 1080
 
 # RED
 lowRed_HSV1 = np.array([0, 70, 50])
@@ -75,6 +75,7 @@ while True:
         srcInput = input('Enter the camera index or url: ')
         if type(srcInput) == str:
             print('User entered an input.')
+            src = srcInput
         else:
             raise Exception
     except Exception as e:
@@ -92,7 +93,7 @@ while True:
 #webcam = 'rtsp://192.168.10.228:8554/live'
 
 
-webcam_stream = WebcamStream(stream_id=src)  # 0 id for main camera
+webcam_stream = WebcamStream(stream_id=int(src))  # 0 id for main camera
 webcam_stream.start()
 # processing frames in input stream
 
