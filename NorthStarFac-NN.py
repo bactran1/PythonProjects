@@ -1,5 +1,5 @@
-import keras.optimizers
 import tensorflow as tf
+import matplotlib.pyplot as plt
 import time
 
 print('Using Tensorflow version: ', tf.version.VERSION)
@@ -11,8 +11,6 @@ def isThereGPU():
 isThereGPU()
 
 
-import tensorflow as tf
-import matplotlib.pyplot as plt
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
@@ -45,16 +43,16 @@ model = createModel()
 print(model.summary())
 
 start_time = time.time()
-model.fit(x_train, y_train, batch_size=64, epochs=20)
+model.fit(x_train, y_train, batch_size=64, epochs=5)
 model.evaluate(x_test, y_test)
 print(f'Time taken: {time.time()-start_time}')
-# print(x_train.shape, y_train.shape)
+print(x_train.shape, y_train.shape)
 
 # pick a sample to plot
-sample = 7
-image = x_train[sample]
+# sample = 8
+# image = x_train[sample]
 # plot the sample
-fig = plt.figure
-plt.imshow(image, cmap='gray')
-plt.show()
-print(y_train[sample])
+# fig = plt.figure
+# plt.imshow(image, cmap='gray')
+# plt.show()
+# print(y_train[sample])
