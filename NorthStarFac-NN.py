@@ -43,10 +43,30 @@ model = createModel()
 print(model.summary())
 
 start_time = time.time()
-model.fit(x_train, y_train, batch_size=64, epochs=500)
-model.evaluate(x_test, y_test)
+history = model.fit(x_train, y_train, batch_size=64, epochs=100)
+#model.evaluate(x_test, y_test)
 print(f'Time taken: {time.time()-start_time}')
-print(x_train.shape, y_train.shape)
+#print(x_train.shape, y_train.shape)
+
+## Plot Accuracy and Loss
+acc = history.history['accuracy']
+
+loss = history.history['loss']
+
+
+epochs = range(1, len(acc) + 1)
+
+plt.plot(epochs, acc, 'bo', label='Training acc')
+plt.title('Training and validation accuracy')
+plt.legend()
+
+plt.figure()
+
+plt.plot(epochs, loss, 'bo', label='Training loss')
+plt.title('Training and validation loss')
+plt.legend()
+
+plt.show()
 
 # pick a sample to plot
 # sample = 8
