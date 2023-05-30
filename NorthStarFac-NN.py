@@ -33,7 +33,7 @@ def createModel():
       tf.keras.layers.Dense(10, activation='softmax')
     ])
 
-    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001),
+    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.00001),
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy', tf.keras.metrics.RootMeanSquaredError()])
     return model
@@ -43,7 +43,7 @@ model = createModel()
 print(model.summary())
 
 start_time = time.time()
-history = model.fit(x_train, y_train, batch_size=64, epochs=100)
+history = model.fit(x_train, y_train, batch_size=64, epochs=500)
 #model.evaluate(x_test, y_test)
 print(f'Time taken: {time.time()-start_time}')
 #print(x_train.shape, y_train.shape)
