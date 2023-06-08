@@ -57,7 +57,7 @@ loss = history.history['loss']
 epochs = range(1, len(acc) + 1)
 
 plt.plot(epochs, acc, 'bo', label='Training acc')
-plt.title('Training Accuracy. Best: ' + acc[epochs])
+plt.title('Training Accuracy. Best: ' + str(round(acc[len(epochs)-1] * 100, 2)) + " %")
 plt.legend()
 
 plt.figure()
