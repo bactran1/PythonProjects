@@ -43,7 +43,7 @@ model = createModel()
 print(model.summary())
 
 start_time = time.time()
-history = model.fit(x_train, y_train, batch_size=64, epochs=500)
+history = model.fit(x_train, y_train, batch_size=64, epochs=1)
 #model.evaluate(x_test, y_test)
 print(f'Time taken: {time.time()-start_time}')
 #print(x_train.shape, y_train.shape)
@@ -57,7 +57,7 @@ loss = history.history['loss']
 epochs = range(1, len(acc) + 1)
 
 plt.plot(epochs, acc, 'bo', label='Training acc')
-plt.title('Training and validation accuracy')
+plt.title('Training Accuracy. Best: ' + acc[epochs])
 plt.legend()
 
 plt.figure()
