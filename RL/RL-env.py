@@ -1,6 +1,6 @@
 
 import gym
-from stable_baselines3 import A2C
+from stable_baselines3 import PPO
 
 
 
@@ -9,7 +9,7 @@ env = gym.make("LunarLander-v2", render_mode='human')
 
 env.reset()
 
-model = A2C("MlpPolicy", env, verbose=1)
+model = PPO("MlpPolicy", env, verbose=1)
 model.learn(total_timesteps=10000)
 
 episodes = 10
