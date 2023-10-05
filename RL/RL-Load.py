@@ -8,7 +8,7 @@ env = make_vec_env("LunarLander-v2", n_envs=1)
 env.reset()
 
 models_dir="models/PPO"
-model_path=f"{models_dir}/1470000.zip"
+model_path=f"{models_dir}/13400000.zip"
 print(model_path)
 
 model = PPO.load(model_path)
