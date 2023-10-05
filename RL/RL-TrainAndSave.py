@@ -20,11 +20,11 @@ env = gym.make("LunarLander-v2")
 env.reset()
 
 
-model = PPO("MlpPolicy", env, verbose=1,learning_rate=0.0001, tensorboard_log=logs_dir)
+model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=logs_dir,device='cuda')
 
 
 
-TIMESTEP = 200000
+TIMESTEP = 10000
 
 for i in range(1,100):
     model.learn(TIMESTEP,reset_num_timesteps=False,tb_log_name="PPO")
